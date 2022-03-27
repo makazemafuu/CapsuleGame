@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CapsuleOnTrigger : MonoBehaviour
+public class MonsterTrigger : MonoBehaviour
 {
     [SerializeField] FloorSpeed floor;
 
@@ -10,10 +10,8 @@ public class CapsuleOnTrigger : MonoBehaviour
     {
         if (col.name == "Capsule")
         {
-            Debug.Log("La capsule trigger le FinishLine");
-            //col.gameObject.transform.GetComponent<FloorSpeed>();
+            Debug.Log("La capsule touche un monstre");
             floor.stop();
-           
         }
     }
 }
